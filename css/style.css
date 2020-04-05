@@ -1,0 +1,43 @@
+body {
+    font-family: 'Gotu', sans-serif;
+    background-color: aquamarine;
+}
+
+.callout-container {
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2017/11/06/15/30/elephant-2923916_960_720.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opaque-overlay {
+    position: absoulute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.jumbotron {
+    background-color: transparent;
+    
+}
+
+.jumbotron small {
+    color: white;
+}
+
+.jumbotron h1{
+    color: white;
+}
+
+.jumbotron .lead {
+    color: white;
+}

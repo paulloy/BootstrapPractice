@@ -8,66 +8,193 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
+<!-- Practice with HTML, CSS, and bootstrap only. -->
 
 <body>
-	<article class="container">
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Maria's Elephants</a>
+
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+		<div class="navbar navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mr-auto">
+				<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+				<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="d-none d-md-block">
+			<p class="navbar-text my-auto mr-2"><i>Great big aul elephant prints!</i></p>
+			<a href="/login">Sign In / Sign Up</a>
+		</div>
+	</nav>
+
+	<article class="container mt-3">
+		<!--<div class="row d-none d-sm-block">
+			<div class="col-12">
+				<div class="alert alert-warning"><strong>SALE NOW ON!</strong> 6-month subscription for the price of 12
+					!!! <a href="">Click for this amazing offer.</a></div>
+			</div>
+		</div>-->
 		<!-- Callout -->
-		<section class="callout">
-			<h1>The finest elephants in Ireland</h1>
-			<p>Sign up today to adopt your first elephant. First one is free!</p>
-		</section>
+
+		<div class=" container-fluid callout-container">
+			<div class="opaque-overlay">
+				<div class="row">
+					<div class="col-12">
+						<section class="callout jumbotron text-center">
+							<h1>The finest elephants in Ireland</h1>
+							<p class="lead">Sign up today to get a photo your first elephant.
+								<s class="d-none d-sm-inline">£999,999,999.99</s>
+								<span class="d-inline d-sm-none"><br></span>
+								<strong><mark>First one is free!</mark></strong></p>
+							<button class="btn btn-success btn-lg">Sign Up</button>
+							<p class="text-muted"><small>you must be 18 to sign up to our service.</small></p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- /.callout -->
 		<hr>
 		<!-- Quotes -->
-		<section class="quotes">
-			<h2 class="upper-case">Quotes:</h2>
-			<div class="quote">
-				<p>They're lovely looking elephants hi.</p>
-				<p>-Big Johnny B</p>
-			</div>
-			<div class="quote">
-				<p>Ah sure they're lovely altogether like.</p>
-				<p>-Miss McM</p>
-			</div>
-		</section>
+		<div class="container quote-container">
+			<section class="quotes">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h2 class="text-uppercase">Quotes:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="media">
+							<div class="d-none d-sm-block">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Joe_Exotic_%28Santa_Rose_County_Jail%29.png/549px-Joe_Exotic_%28Santa_Rose_County_Jail%29.png" class="rounded-circle mr-3" height=100 width=100>
+						</div>
+								<div class="media-body">
+									<blockquote class="blockquote">
+										<p>They're lovely looking elephants hi.</p>
+										<p>-Big Johnny B</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="media">
+								<div class="d-none d-sm-block">
+									<img src="https://upload.wikimedia.org/wikipedia/en/5/55/Carole_Baskin_September_2019.png" class="rounded-circle mr-3" height=100 width=100>
+						    </div>
+									<div class="media-body">
+										<blockquote class="blockquote">
+											<p>Ah sure they're lovely altogether like.</p>
+											<p>-Miss Mary</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+			</section>
+		</div>
 		<!-- /.quotes -->
 		<hr>
 		<!-- Features -->
-		<section class="features">
-			<h2>Features:</h2>
-			<div class="feature">
-				<h3>Feature 1</h3>
-				<p>O Meno, there was a time when the Thessalians were famous among the other Hellenes only for their
-					riches and their riding; but now, if I am not mistaken, they are equally famous for their wisdom,
-					especially at Larisa, which is the native city of your friend Aristippus. And this is Gorgias'
-					doing; for when he came there, the flower of the Aleuadae, among them your admirer Aristippus, and
-					the other chiefs of the Thessalians, fell in love with his wisdom.</p>
-			</div>
-			<div class="feature">
-				<h3>Feature 2</h3>
-				<p>And he has taught you the habit of answering questions in a grand and bold style, which becomes those
-					who know, and is the style in which he himself answers all comers; and any Hellene who likes may ask
-					him anything. How different is our lot! my dear Meno. Here at Athens there is a dearth of the
-					commodity, and all wisdom seems to have emigrated from us to you. I am certain that if you were to
-					ask any Athenian whether virtue was natural or acquired, he would laugh in your face, and say:
-					"Stranger, you have far too good an opinion of me, if you think that I can answer your question.</p>
-			</div>
-			<div class="feature">
-				<h3>Feature 3</h3>
-				<p>For I literally do not know what virtue is, and much less whether it is acquired by teaching or not."
-					And I myself, Meno, living as I do in this region of poverty, am as poor as the rest of the world;
-					and I confess with shame that I know literally nothing about virtue; and when I do not know the
-					"quid" of anything how can I know the "quale"? How, if I knew nothing at all of Meno, could I tell
-					if he was fair, or the opposite of fair; rich and noble, or the reverse of rich and noble? Do you
-					think that I could?</p>
-			</div>
-		</section>
+		<div class="container features-container">
+			<section class="features">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h2 class="text-uppercase">Features:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="feature">
+							<h3>Feature 1</h3>
+							<p>O Meno, there was a time when the Thessalians were famous among the other Hellenes only
+								for
+								their
+								riches and their riding; but now, if I am not mistaken, they are equally famous for
+								their
+								wisdom,
+								especially at Larisa, which is the native city of your friend Aristippus. And this is
+								Gorgias'
+								doing; for when he came there, the flower of the Aleuadae, among them your admirer
+								Aristippus,
+								and
+								the other chiefs of the Thessalians, fell in love with his wisdom.</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="feature">
+							<h3>Feature 2</h3>
+							<p>And he has taught you the habit of answering questions in a grand and bold style, which
+								becomes
+								those
+								who know, and is the style in which he himself answers all comers; and any Hellene who
+								likes
+								may
+								ask
+								him anything. How different is our lot! my dear Meno. Here at Athens there is a dearth
+								of
+								the
+								commodity, and all wisdom seems to have emigrated from us to you. I am certain that if
+								you
+								were
+								to
+								ask any Athenian whether virtue was natural or acquired, he would laugh in your face,
+								and
+								say:
+								"Stranger, you have far too good an opinion of me, if you think that I can answer your
+								question.
+							</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
+					</div>
+
+					<div class="col-12 d-md-none d-lg-block col-lg-4">
+						<div class="feature">
+							<h3>Feature 3</h3>
+							<p>For I literally do not know what virtue is, and much less whether it is acquired by
+								teaching or
+								not."
+								And I myself, Meno, living as I do in this region of poverty, am as poor as the rest of
+								the
+								world;
+								and I confess with shame that I know literally nothing about virtue; and when I do not
+								know the
+								"quid" of anything how can I know the "quale"? How, if I knew nothing at all of Meno,
+								could I
+								tell
+								if he was fair, or the opposite of fair; rich and noble, or the reverse of rich and
+								noble? Do
+								you
+								think that I could?</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
 		<!-- /.features -->
 	</article>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+
 </body>
 
 </html>
